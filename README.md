@@ -1,6 +1,4 @@
-# Frontend Development Frameworks — Lab Experiments 1–8
 
-Based on the experiment list in the KLU 25CS2101 Front End Development Frameworks workbook.
 
 ## Contents
 1. Git repository operations — `experiments/01-git-operations/README.md`
