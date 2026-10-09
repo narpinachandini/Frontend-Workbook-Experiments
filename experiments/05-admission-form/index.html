@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Student Admission Form</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="shell">
+  <section class="intro"><p class="tag">ADMISSIONS · 2026–27</p><h1>Your next chapter<br>starts <em>here.</em></h1><p>Complete the form to begin your application. Fields marked * are required.</p><div class="steps"><span>01</span> Personal details <i></i><span>02</span> Academic details</div></section>
+  <form id="admission-form">
+    <h2>Student information</h2>
+    <div class="grid">
+      <label>Full name *<input name="fullName" required autocomplete="name" placeholder="Your full name"></label>
+      <label>Date of birth *<input type="date" name="dob" required></label>
+      <label>Email address *<input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <label>Phone number *<input type="tel" name="phone" required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"><small>Enter exactly 10 digits.</small></label>
+      <label>Course applying for *<select name="course" required><option value="">Choose a course</option><option>B.Tech — Computer Science</option><option>B.Tech — AI & Data Science</option><option>BBA</option><option>B.Sc</option></select></label>
+      <label>Admission type *<select name="type" required><option value="">Choose type</option><option>Regular</option><option>Lateral entry</option></select></label>
+      <label class="wide">Address *<textarea name="address" rows="3" required placeholder="House, street, city, state"></textarea></label>
+      <label>Previous qualification *<select name="qualification" required><option value="">Choose qualification</option><option>Intermediate / 12th</option><option>Diploma</option><option>Other</option></select></label>
+      <label>Percentage / CGPA *<input type="number" name="score" min="0" max="100" step="0.01" required placeholder="e.g. 92.5"></label>
+    </div>
+    <label class="consent"><input type="checkbox" required> I confirm that the information provided is accurate.</label>
+    <button type="submit">Submit application <span>→</span></button>
+    <p id="message" role="status" aria-live="polite"></p>
+  </form>
+</main><script src="script.js"></script></body></html>

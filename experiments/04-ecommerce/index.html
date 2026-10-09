@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova — Everyday Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">nova<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#products">Shop</a><a href="#story">Our story</a><a href="#footer">Contact</a>
+    </nav>
+    <a class="cart" href="#products">Bag <span id="cart-count">0</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY EDIT</p>
+        <h1>Good things.<br><em>Better living.</em></h1>
+        <p>Thoughtful essentials designed to make ordinary days feel special.</p>
+        <a class="button" href="#products">Explore collection <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative product composition">
+        <div class="sun"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="art-label">SIMPLE<br>BY DESIGN</div>
+      </div>
+    </section>
+    <section id="products" class="products-section">
+      <div class="section-heading"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Popular right now</h2></div><p>Little upgrades, every day.</p></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-art art-mug"><span>01</span><div class="mug"></div></div><p class="category">HOME · CERAMIC</p><h3>Sunday Mug</h3><div class="product-bottom"><strong>₹499</strong><button class="add" data-product="Sunday Mug">Add to bag +</button></div></article>
+        <article class="product-card"><div class="product-art art-bag"><span>02</span><div class="tote"></div></div><p class="category">DAILY · CARRY</p><h3>Canvas Tote</h3><div class="product-bottom"><strong>₹799</strong><button class="add" data-product="Canvas Tote">Add to bag +</button></div></article>
+        <article class="product-card"><div class="product-art art-lamp"><span>03</span><div class="lamp"></div></div><p class="category">SPACE · LIGHTING</p><h3>Soft Glow Lamp</h3><div class="product-bottom"><strong>₹1,299</strong><button class="add" data-product="Soft Glow Lamp">Add to bag +</button></div></article>
+      </div>
+    </section>
+    <section id="story" class="story"><p class="eyebrow">LESS, BUT LOVELIER</p><h2>Made for the moments<br>that make a life.</h2><p>Useful objects. Considered details. A little more joy in your everyday.</p></section>
+  </main>
+  <footer id="footer"><span class="logo">nova<span>.</span></span><span>Demo storefront · Frontend Lab 4</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Weather Now</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="weather-app"><header><a class="brand" href="#">weather<span>now</span></a><span class="live"><i></i> LIVE CONDITIONS</span></header>
+<section class="intro"><p class="eyebrow">YOUR DAY, AT A GLANCE</p><h1>Weather, made<br><em>simple.</em></h1><p>Find current conditions and a 5-day outlook for a city.</p></section>
+<form id="weather-form"><label for="city">City name</label><div class="search-row"><input id="city" value="Vijayawada" required placeholder="e.g. Vijayawada"><button>Search <span>↗</span></button></div></form>
+<p id="status" role="status" aria-live="polite">Ready when you are. Search for a city.</p>
+<section id="current" class="current" hidden><div><p id="place" class="place"></p><p id="description" class="description"></p><strong id="temperature" class="temperature"></strong><p id="feels"></p></div><div id="weather-icon" class="weather-icon">☀</div></section>
+<section id="forecast" class="forecast" hidden><h2>Next five days</h2><div id="forecast-grid" class="forecast-grid"></div></section>
+<footer>Weather data from Open-Meteo · No API key required</footer></main><script src="script.js"></script></body></html>
